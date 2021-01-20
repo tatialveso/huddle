@@ -18,15 +18,15 @@ body {
 
 .main {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .img {
-    width: 90%;
+    width: 85%;
 }
 
 .section-text {
-    width: 40%;
+    width: 35%;
     margin-top: 40px;
 }
 
@@ -53,27 +53,52 @@ p {
     box-shadow: 7px 6px 5px #00000033;
 }
 
-.social-media {
+.footer {
     display: flex;
     justify-content: flex-end;
     margin-right: 30px;
 }
 
 .fa {
-    padding: 10px;
+    margin-bottom: 20px;
+    padding-right: 20px;
 }
 
 .fa:hover {
     color: hsl(300, 69%, 71%);
+    cursor: pointer;
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-    margin-bottom: 0;
-}
-
-.attribution a {
+.button:hover {
+    cursor: pointer;
     color: #FFFFFF;
-    text-decoration: none;
+    background-color: hsl(300, 69%, 71%);
+}
+
+@media(max-width: 375px) {
+    .logo {
+        width: 200px;
+    }
+
+    .main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img {
+        margin: 0 20px;
+    }
+
+    .section-text {
+        margin: 20px auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    .footer {
+        justify-content: center;
+        padding-left: 20px;
+        margin-top: 50px;
+        margin-right: 0;
+    }
 }
